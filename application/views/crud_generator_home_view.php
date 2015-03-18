@@ -8,14 +8,15 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
     <title>Codeigniter CRUD Generator</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
     <link href="<?php echo base_url(); ?>assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+
+    <link href="<?php echo base_url(); ?>assets/css/mystyle.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -46,18 +47,7 @@
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
+           
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -71,11 +61,47 @@
         <p>Codeigniter CRUD Generator is an PHP Application to build quickly Backend just adding your table.<br>
         	In building.....</p>
       </div>
+      <div>
+      Please enter the database informations.<br>
+        
+      </div>
+      <div class="row">
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+            <form action="<?=base_url()?>Crud_generator/step1" method="POST" role="form">
+
+
+                <div class="form-group">
+                  <label for="lib_city">Hostname</label>
+                  <input type="text" name="hostname" class="form-control" >
+                </div>
+                <div class="form-group">
+                  <label for="lib_city">Username</label>
+                  <input type="text" name="username" class="form-control" >
+                </div>
+                <div class="form-group">
+                  <label for="lib_city">Password</label>
+                  <input type="paswword" name="password" class="form-control" >
+                </div>
+                <div class="form-group">
+                  <label for="lib_city">Database name</label>
+                  <input type="text" name="dbname" class="form-control" >
+                </div>
+
+                 
+              
+                <button type="submit" class="btn btn-primary">Start </button>
+              </form>
+            </div>
+          </div>
+      </div>
 
 
       
 
     </div> <!-- /container -->
+    <div class="bottom-footer">
+      © Copyright 2015 | Developed by Arnold KOUYA. All Rights Reserved.
+  </div>
 
 
     <!-- Bootstrap core JavaScript
