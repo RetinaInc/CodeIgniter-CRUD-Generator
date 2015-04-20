@@ -40,11 +40,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Codeigniter CRUD Generator</a>
+          <a class="navbar-brand" href="<?php site_url('Crud_generator') ;?>">Codeigniter CRUD Generator</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li 
+            class="active"><a href="<?php site_url('Crud_generator') ;?>">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
            
@@ -73,18 +74,22 @@
                 <div class="form-group">
                   <label for="lib_city">Hostname</label>
                   <input type="text" name="hostname" class="form-control" >
+                  <?php echo form_error('hostname','<font color="red">','</font>'); ?>
                 </div>
                 <div class="form-group">
                   <label for="lib_city">Username</label>
                   <input type="text" name="username" class="form-control" >
+                  <?php echo form_error('username','<font color="red">','</font>'); ?>
                 </div>
                 <div class="form-group">
                   <label for="lib_city">Password</label>
                   <input type="paswword" name="password" class="form-control" >
+                  <?php echo form_error('password','<font color="red">','</font>'); ?>
                 </div>
                 <div class="form-group">
                   <label for="lib_city">Database name</label>
                   <input type="text" name="dbname" class="form-control" >
+                  <?php echo form_error('dbname','<font color="red">','</font>'); ?>
                 </div>
 
                  
